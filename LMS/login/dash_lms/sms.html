@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive LMS Dashboard</title>
+  <link rel="stylesheet" href="lms.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+      <h2 class="logo">SMS Dashboard</h2>
+      <nav>
+        <ul>
+          <li><a href="#overview" class="active">Overview</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#progress">Progress</a></li>
+          <li><a href="#settings">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Toggle Button -->
+    <button id="sidebarToggle" class="sidebar-toggle">☰</button>
+
+    <!-- Main Content -->
+    <main class="content">
+      <header class="header">
+        <h1>Welcome Back, User!</h1>
+        <button id="themeToggle" class="theme-toggle">
+            <i class="fas fa-sun sun-icon"></i>  <!-- Sun Icon -->
+            <i class="fas fa-moon moon-icon"></i> <!-- Moon Icon -->
+          </button>
+      </header>
+
+      <section id="overview" class="section">
+        <h2>Overview</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Enrolled Courses</h3>
+            <p>8 Courses</p>
+          </div>
+          <div class="card">
+            <h3>Completed</h3>
+            <p>5 Courses</p>
+          </div>
+          <div class="card">
+            <h3>Upcoming Deadlines</h3>
+            <p>3 Assignments</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses" class="section">
+        <h2>Courses</h2>
+        <ul class="course-list">
+          <li>HTML & CSS Basics</li>
+          <li>JavaScript Essentials</li>
+          <li>Advanced Web Development</li>
+        </ul>
+      </section>
+
+      <section id="progress" class="section">
+        <h2>Progress</h2>
+        <p>Your progress will be displayed here.</p>
+      </section>
+
+      <section id="settings" class="section">
+        <h2>Settings</h2>
+        <p>Update your LMS preferences here.</p>
+      </section>
+    </main>
+  </div>
+  <script src="lms.js"></script>
+</body>
+</html>
